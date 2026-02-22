@@ -88,7 +88,6 @@
     </div>
 
     <script>
-        // ADD YOUR IMAGE URLS HERE
         const images = [
             "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=1920",
             "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=1920",
@@ -103,11 +102,9 @@
             currentIndex = (currentIndex + 1) % images.length;
         }
 
-        // Initialize and set interval (5 seconds per image)
         nextImage();
-        setInterval(nextImage, 5000);
+        setInterval(nextImage, 15000);
 
-        // Optional GMod specific hooks
         function SetFilesNeeded(needed) {
             document.getElementById('status').innerHTML = "Downloading " + needed + " files...";
         }
